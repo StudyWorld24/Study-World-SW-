@@ -23,7 +23,7 @@ jobs:
           gradle-version: '8.9'
 
       - name: Extract project
-        run: unzip Study_World_Cloud_Build_Package.zip -d project
+        run: unzip app.zip -d project
 
       - name: Build APK
         run: gradle -p project :app:assembleDebug
