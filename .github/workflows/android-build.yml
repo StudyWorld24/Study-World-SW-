@@ -33,6 +33,11 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: Study-World-APK
-          path: project/app/build/outputs/apk/debug/app-d
-          ebug.apk
+          
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: Study-World-APK
+          path: project/app/build/outputs/apk/debug/*.apk
+
    
